@@ -14,7 +14,7 @@ import tech.sourced.babelfishclient.BabelfishClient;
 public class BabelfishCLI {
     
     public static void main(String[] args) {
-        BabelfishClient client = new BabelfishClient("0.0.0.0:4123");   
-    }
-    
+        BabelfishClient client = new BabelfishClient("0.0.0.0", 9432);
+        client.greet("a=b+c", "python");
+    } 
 }
